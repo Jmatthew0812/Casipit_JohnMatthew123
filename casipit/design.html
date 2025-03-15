@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        /* Set a gradient background for the entire page */
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient from purple to blue */
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Container for the product showcase */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+            gap: 30px;
+            padding: 20px;
+            width: 90%;
+        }
+
+        /* Product styling */
+        .product {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect for 3D look */
+            transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+        }
+
+        .product:hover {
+            transform: translateY(-10px); /* Hover effect */
+        }
+
+        .product img {
+            width: 100%;
+            border-bottom: 3px solid #fff; /* Border between image and text */
+        }
+
+        .product h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .product button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .product button:hover {
+            background-color: #e65c00; /* Darker orange on hover */
+        }
+
+        /* Adjust text color for better contrast */
+        .product p, .product h2 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="c:\CasipitHTML\casipit\download (3).jpg" alt="Chicken Shoes">
+            <h2>Chicken Shoes Gen.XI</h2>
+            <p>Price: P10,000</p>
+            <p>A powerful shoe with a stunning display and amazing insole.</p>
+            <a href="https://shopee.ph/product-link-for-chicken-shoes" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="c:\CasipitHTML\casipit\download (4).jpg" alt="SandWhich 2000">
+            <h2>SandWhich 2000</h2>
+            <p>Price: P12,500</p>
+            <p>Comfortable insole with superior sound quality and noise cancellation while walking.</p>
+            <a href="https://shopee.ph/product-link-for-sandwhich" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="c:\CasipitHTML\casipit\s-l1200.jpg" alt="Graphic T-shirt">
+            <h2>Graphic T-SHIRT</h2>
+            <p>Price: P15,999</p>
+            <p>A quality t-shirt and most unique, legendary, and antique shirt of all.</p>
+            <a href="https://shopee.ph/product-link-for-graphic-tshirt" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="c:\CasipitHTML\casipit\images.jpg" alt="lexiTMBLR">
+            <h2>lexiTMBLR</h2>
+            <p>Price: P950</p>
+            <p>A stylish tumbler with fitness tracking sip. Good in the heart and can be used as a multipurpose material.</p>
+            <a href="https://shopee.ph/product-link-for-lexitmblr" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
